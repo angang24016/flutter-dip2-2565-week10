@@ -1,20 +1,18 @@
-
 import 'package:flutter/material.dart';
 
-class ImageDemo extends StatelessWidget
-  //1.constructor
+class ImageDemo extends StatelessWidget{
   const ImageDemo({Key? key}):super(key: key);
 
-  //2.build
-  widget build(BuildContext context) {
+
+  Widget build(BuildContext context){
     return Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: Text("Flutter Basic"),
-        ).
-        body: Center(
-    child: Image.asset("assets/doctor.png")
-     ),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Flutter Basic"),
+      ),
+      body: Center(
+          child: Image.asset("https://pixabay.com/photos/man-actor-wang-yibo-portrait-6342453/",width: 300.0),
+      ),
     );
-   }
   }
+}
